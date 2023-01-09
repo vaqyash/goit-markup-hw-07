@@ -19,7 +19,8 @@
     --clr-modal-bgd: #FCFCFC;
     --clr-success: #31D0AA;
     --font-logo: 'Raleway', sans-serif;
-    --font-main: 'Roboto', sans-serif
+    --font-main: 'Roboto', sans-serif;
+    --time-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -31,6 +32,11 @@ body {
 .txt-clr-accent {
     color: var(--clr-iris);
 }
+
+.hidden {
+    display: none
+}
+
 
 /* - Header styles - */
 
@@ -141,9 +147,46 @@ body {
     cursor: pointer;
 
     transition:
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color 250ms var(--time-func);
 }
 
 .order-btn:hover {
     background-color: var(--clr-btn-hover);
+}
+
+
+/* Qualities Section Styles */
+
+.qualit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+
+    margin: 0;
+    padding: 96px 16px;
+
+    list-style-type: none;
+}
+
+.qualit-title {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1111;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.qualit-text {
+    margin: 0;
+    padding: 8px 0 0 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--clr-slate);
 }
