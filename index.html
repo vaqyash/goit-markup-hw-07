@@ -61,28 +61,59 @@
 
     <!-- Mobile Menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
+      <div class="menu-box-top">
+        <button class="close-btn js-close-menu">
+          <svg height="8" width="8" class="close-cross">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
+        <ul class="mobile-menu">
+          <li>
+            <a href="./index.html" class="mobile-nav-item">Sudio</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile-nav-item">Portfolio</a>
+          </li>
+          <li><a href="#" class="mobile-nav-item">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="menu-box-bottom">
+        <a href="tel:+110001111111" class="tel-mobile">+11 (000) 111-11-11</a>
+        <a href="mailto:info@devstydio.com" class="mail-mobile"
+          >info@devstudio.com</a
+        >
+        <ul class="menu-icons-list">
+          <li>
+            <a href="https://www.instagram.com/" class="menu-sm-icon">
+              <svg height="40" width="40">
+                <use href="./images/icons.svg#foot-1-inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" class="menu-sm-icon">
+              <svg height="40" width="40">
+                <use href="./images/icons.svg#foot-2-twit"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" class="menu-sm-icon">
+              <svg height="40" width="40">
+                <use href="./images/icons.svg#foot-3-fcbk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" class="menu-sm-icon">
+              <svg height="40" width="40">
+                <use href="./images/icons.svg#foot-4-ldin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <main>
@@ -411,6 +442,92 @@
         </button>
       </form>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg height="8" width="8" class="close-cross">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <form class="form">
+          <div role="group" aria-labelledby="modal-title">
+            <p id="modal-title" class="modal-title">
+              Leave your contacts and we will call you back
+            </p>
+            <label for="modal-name" class="form-label"> Name </label>
+            <div class="form-elem-box">
+              <input
+                type="text"
+                name="username"
+                id="modal-name"
+                class="form-elem"
+              />
+              <span class="form-icon">
+                <svg height="24" width="18">
+                  <use href="./images/icons.svg#user"></use>
+                </svg>
+              </span>
+            </div>
+            <label for="modal-tel" class="form-label"> Phone </label>
+            <div class="form-elem-box">
+              <input type="tel" name="tel" id="modal-tel" class="form-elem" />
+              <span class="form-icon">
+                <svg height="24" width="18">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+              </span>
+            </div>
+            <label for="form-mail" class="form-label"> Email </label>
+            <div class="form-elem-box">
+              <input
+                type="email"
+                name="email"
+                id="form-mail"
+                class="form-elem"
+              />
+              <span class="form-icon">
+                <svg height="24" width="18">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+              </span>
+            </div>
+            <div>
+              <label class="form-label">
+                Comment
+                <textarea
+                  name="feedback"
+                  rows="8"
+                  placeholder="Text input"
+                  class="form-elem comment-elem"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+          <label class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="privacy-policy"
+              value="accept"
+              class="checkbox"
+            />
+            <span class="checkbox-btn">
+              <svg height="8" width="10">
+                <use href="./images/icons.svg#checkbox"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the&nbsp;
+            <a href="#" class="privacy-policy-link"> Privacy Policy</a>
+          </label>
+          <div class="centring-box">
+            <button type="submit" class="order-btn">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
