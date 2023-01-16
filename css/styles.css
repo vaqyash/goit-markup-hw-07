@@ -37,6 +37,23 @@ body {
     display: none
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+}
+
+@media screen and (min-width: 1128px) {
+    .container {
+        width: 1128px;
+    }
+}
+
 .basic-section {
     margin: 0;
     padding: 96px 16px;
@@ -127,10 +144,11 @@ body {
 
 .header-box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
 
-    padding: 0 16px;
+    margin: 0;
+    padding: 24px 16px 0 16px;
 
     height: 70px;
 
@@ -179,8 +197,10 @@ body {
 .nav-item {
     position: relative;
 
+    height: 46px;
+
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -194,7 +214,7 @@ body {
     content: "";
 
     position: absolute;
-    top: 218%;
+    top: 40px;
     left: 0;
 
     width: 100%;
@@ -235,14 +255,28 @@ body {
     }
 }
 
+@media screen and (min-width: 1128px) {
+    .header-conts {
+        padding-left: 256px;
+    }
+}
+
 .tel-mail {
     text-decoration: none;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.3333;
+    letter-spacing: 0.04em;
     color: var(--clr-slate);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1128px) {
+    .tel-mail {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
 }
 
 .tel-mail:hover,
