@@ -330,7 +330,7 @@ body {
     gap: 40px;
 
     margin: 0;
-    padding: 0 24px;
+    padding: 24px;
 }
 
 .tel-mobile {
@@ -362,12 +362,19 @@ body {
 
 .menu-icons-list {
     display: flex;
-    gap: 56px;
+    justify-content: space-between;
 
     margin: 0;
     padding: 8px 0 0 0;
 
     list-style-type: none;
+}
+
+@media screen and (min-width: 408px) {
+    .menu-icons-list {
+        gap: 56px;
+        width: 328px;
+    }
 }
 
 .menu-sm-icon {
@@ -793,10 +800,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    padding: 24px;
+    padding: 24px 16px;
 
-    min-width: 408px;
-    min-height: 576px;
+    width: 92%;
 
     background-color: var(--clr-modal-bgd);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -805,9 +811,25 @@ body {
     border-radius: 4px;
 }
 
+@media screen and (min-width: 428px) {
+    .modal {
+        width: 392px;
+        min-height: 576px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        padding: 24px;
+        width: 408px;
+        min-height: 576px;
+    }
+}
+
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .modal-title {
@@ -837,7 +859,7 @@ body {
     padding-left: 34px;
     margin: 4px 0 8px 0;
 
-    width: 360px;
+    width: 100%;
     height: 40px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
