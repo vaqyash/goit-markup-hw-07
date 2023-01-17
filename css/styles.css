@@ -755,6 +755,8 @@ and (max-width: 1128px) {
 
 @media screen and (min-width: 1128px) {
     .hero-box {
+        padding: 188px 0;
+
         background-image:
             linear-gradient(to right,
                 rgba(46, 47, 66, 0.7),
@@ -775,8 +777,6 @@ and (max-width: 1128px) {
         }
     }
 }
-
-
 
 
 .hero-content-box {
@@ -802,6 +802,11 @@ and (max-width: 1128px) {
 @media screen and (min-width: 768px) {
     .hero-text {
         margin: 0 0 16px 0;
+
+        max-width: 496px;
+
+        font-size: 56px;
+        line-height: 1.0714;
     }
 }
 
