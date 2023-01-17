@@ -478,6 +478,7 @@ body {
 @media screen and (min-width: 768px) {
     .footer-container {
         flex-direction: row;
+        align-items: flex-start;
 
         padding: 96px 108px;
     }
@@ -485,7 +486,6 @@ body {
 
 @media screen and (min-width: 1160px) {
     .footer-container {
-        align-items: flex-start;
         justify-content: space-between;
         gap: 0;
 
@@ -502,6 +502,12 @@ body {
 
     margin: 0;
     padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .first-foot-box {
+        align-items: flex-start;
+    }
 }
 
 .footer-logo {
@@ -537,6 +543,11 @@ body {
 @media screen and (min-width: 768px) {
     .sm-links-foot-box {
         align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .sm-links-foot-box {
         margin: 0 0 0 40px;
     }
 }
