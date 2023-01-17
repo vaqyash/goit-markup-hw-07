@@ -63,6 +63,12 @@ body {
     padding: 96px 16px;
 }
 
+@media screen and (min-width: 1160px) {
+    .basic-section {
+        padding: 120px 0;
+    }
+}
+
 .sect-header {
     margin: 0 0 72px 0;
     padding: 0;
@@ -148,7 +154,6 @@ body {
 
 .header-box {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 
     margin: 0;
@@ -169,6 +174,12 @@ body {
     padding: 0;
 
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        width: 768px;
+    }
 }
 
 @media screen and (min-width: 1128px) {
@@ -481,6 +492,8 @@ body {
         align-items: flex-start;
 
         padding: 96px 108px;
+
+        width: 768px;
     }
 }
 
@@ -941,6 +954,8 @@ and (max-width: 1128px) {
     .wedo-section {
         display: flex;
         justify-content: center;
+
+        padding: 0 0 120px 0;
     }
 }
 
@@ -965,6 +980,12 @@ and (max-width: 1128px) {
     padding: 96px 0;
 
     background-color: var(--clr-cloud);
+}
+
+@media screen and (min-width: 1160px) {
+    .team-section {
+        padding: 120px 0;
+    }
 }
 
 .team-list {
