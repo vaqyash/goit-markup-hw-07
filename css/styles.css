@@ -630,13 +630,13 @@ body {
 @media screen and (min-width: 428px) 
     {
     .subscribe-input {
-        max-width: 396px;
+        width: 396px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .subscribe-input {
-        max-width: 264px;
+        width: 264px;
     }
 }
 
