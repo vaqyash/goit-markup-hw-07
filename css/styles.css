@@ -45,13 +45,23 @@ body {
 
     margin: 0;
     padding: 0;
-
-    width: 1128px;
 }
 
-@media screen and (max-width: 1128px) {
+@media screen and (min-width: 428px) {
     .container {
-        width: 100%;
+        width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1128px) {
+    .container {
+        width: 1128px;
     }
 }
 
@@ -174,6 +184,12 @@ body {
     padding: 0;
 
     width: 100%;
+}
+
+@media screen and (min-width: 428px) {
+    .header-container {
+        width: 428px;
+    }
 }
 
 @media screen and (min-width: 768px) {
