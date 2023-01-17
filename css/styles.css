@@ -885,7 +885,7 @@ and (max-width: 1128px) {
 }
 
 
-@media screen and (min-width: 1128px) {
+@media screen and (min-width: 1160px) {
     .wedo-section {
         display: flex;
         justify-content: center;
@@ -910,7 +910,7 @@ and (max-width: 1128px) {
     justify-content: center;
 
     margin: 0;
-    padding: 96px 100px;
+    padding: 96px 0;
 
     background-color: var(--clr-cloud);
 }
@@ -933,6 +933,12 @@ and (max-width: 1128px) {
     .team-list {
         row-gap: 64px;
         max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .team-list {
+        max-width: 1128px;
     }
 }
 
@@ -1006,7 +1012,13 @@ and (max-width: 1128px) {
 @media screen and (min-width: 768px) {
     .customer-list {
         column-gap: 24px;
-        max-width: 768px;
+        max-width: 552px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .customer-list {
+        max-width: 1128px;
     }
 }
 
@@ -1036,6 +1048,12 @@ and (max-width: 1128px) {
 .customer-card:focus {
     border: 1px solid var(--clr-btn-hover);
     fill: var(--clr-btn-hover);
+}
+
+@media screen and (min-width: 768px) {
+    .customer-card {
+        width: 168px;
+    }
 }
 
 .customer-logo {
