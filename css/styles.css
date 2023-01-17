@@ -841,7 +841,7 @@ and (max-width: 1128px) {
 @media screen and (min-width: 1160px) {
     .qualit-title {
         width: 264px;
-        
+
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -878,19 +878,28 @@ and (max-width: 1128px) {
 /* WeDoing Section Styles */
 
 .wedo-section {
-    padding-top: 0;
-
+    margin: 0;
+    padding: 0 0 96px 0;
+    
     display: none;
 }
 
+
 @media screen and (min-width: 1128px) {
     .wedo-section {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 }
 
 .wedo-list {
     display: flex;
+    gap: 24px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
 }
 
 
