@@ -46,12 +46,12 @@ body {
     margin: 0;
     padding: 0;
 
-    width: 100%;
+    width: 1128px;
 }
 
-@media screen and (min-width: 1128px) {
+@media screen and (max-width: 1128px) {
     .container {
-        width: 1128px;
+        width: 100%;
     }
 }
 
@@ -278,6 +278,7 @@ body {
 
 @media screen and (min-width: 1128px) {
     .header-conts {
+        flex-direction: row;
         padding-left: 256px;
     }
 }
@@ -552,7 +553,7 @@ body {
     margin: 0;
     padding: 0;
 
-    width: 496px;
+    width: 464px;
 }
 
 @media screen and (max-width: 767px) {
@@ -605,7 +606,7 @@ body {
 @media screen and (min-width: 428px) 
     {
     .subscribe-input {
-        max-width: 360px;
+        max-width: 396px;
     }
 }
 
@@ -670,7 +671,7 @@ body {
     background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .hero-box {
     background-image:
         linear-gradient(to right,
@@ -694,7 +695,7 @@ body {
 }
 
 @media screen and (min-width: 768px) 
-and (max-width: 1127px) {
+and (max-width: 1128px) {
     .hero-box {
         background-image:
             linear-gradient(to right,
@@ -780,11 +781,49 @@ and (max-width: 1127px) {
     list-style-type: none;
 }
 
+@media screen and (min-width: 1148px) {
+    .qualit-list {
+        column-gap: 32px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .qualit-list {
+        column-gap: 24px;
+    }
+}
+
 .qualit-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
+}
+
+.img-qualities {
+    display: none;
+
+    margin: 0 0 8px 0;
+    padding: 0;
+
+    width: 264px;
+    height: 112px;
+
+    background-color: var(--clr-cloud);
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 1160px) {
+    .img-qualities {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.img-qualit-icon {
+    width: 64px;
+    height: 64px;
 }
 
 .qualit-title {
@@ -797,6 +836,17 @@ and (max-width: 1127px) {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+}
+
+@media screen and (min-width: 1160px) {
+    .qualit-title {
+        width: 264px;
+        
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: left;
+    }
 }
 
 .qualit-text {
@@ -816,6 +866,31 @@ and (max-width: 1127px) {
     .qualit-text {
         max-width: 356px;
     }
+}
+
+@media screen and (min-width: 1160px) {
+    .qualit-text {
+        max-width: 264px;
+        font-weight: 400;
+    }
+}
+
+/* WeDoing Section Styles */
+
+.wedo-section {
+    padding-top: 0;
+
+    display: none;
+}
+
+@media screen and (min-width: 1128px) {
+    .wedo-section {
+        display: block;
+    }
+}
+
+.wedo-list {
+    display: flex;
 }
 
 
